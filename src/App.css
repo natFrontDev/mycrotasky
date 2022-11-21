@@ -48,6 +48,7 @@ header {
   align-items: center;
   text-align: center;
   background-color: cadetblue;
+  padding: 20px;
 }
 .App-logo {
   height: 40vmin;

@@ -1,0 +1,18 @@
+.button {
+    padding: 20px;
+    color: darkolivegreen;
+    font-size: 28px;
+    border-radius: 10px;
+    box-shadow: yellow;
+    cursor: pointer;
+
+
+}
+
+.button:active {
+    background-color: aquamarine;
+    box-shadow: inset 0px 0px 20px lightslategrey;
+    transform: translate(5px, 5px) ;
+    transition-duration: 50ms;
+;
+}
