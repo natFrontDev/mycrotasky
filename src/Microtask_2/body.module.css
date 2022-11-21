@@ -1,0 +1,21 @@
+.carsForm {
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin-top: 20px;
+
+}
+.carsForm th {
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.carsForm tr {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.carsForm td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}

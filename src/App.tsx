@@ -1,17 +1,29 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Header} from "./site/Header";
-import {Body} from "./site/Body";
-import {Footer} from "./site/Footer";
+import {BrowserRouter as Router, Route, Link, Routes} from "react-router-dom";
+import {Navbar} from "./Navbar";
+import {Task2} from "./Microtask_2/Task_2";
+import {Task3} from "./Microtask_3/Task_3";
+import {Task4} from "./Microtask_4/Task_4";
+import {Task5} from "./Microtask_5/Task_5";
+
 
 function App() {
+
   return (
-      <>
-        <Header title = {"NEW TITLE"}/>
-        <Body titleForBody = {"NEW BODY"}/>
-        <Footer titleForFooter = {"NEW FOOTER"}/>
-      </>
+      <div className={"main_style"}>
+          <header>MIKROTASKS</header>
+          <Navbar/>
+          <div className={'App_wrapper_content'}>
+              <Routes>
+                  <Route path={"/task2"} element={<Task2/>}/>
+                  <Route path={"/task3"} element={<Task3/>}/>
+                  <Route path={"/task4"} element={<Task4/>}/>
+                  <Route path={"/task5"} element={<Task5/>}/>
+              </Routes>
+          </div>
+      </div>
   );
 }
 
